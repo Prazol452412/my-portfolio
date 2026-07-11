@@ -1,4 +1,4 @@
-# Prazol Nepal — Portfolio Website
+# Portfolio Website
 
 A static, multi-page personal portfolio website built entirely with plain HTML. No CSS files, no JavaScript, and no inline styles are used anywhere in this project. Layout elements such as the horizontal navigation bar and header are achieved using native HTML tags like `<table>`, in the style of early web pages built before CSS was standard.
 

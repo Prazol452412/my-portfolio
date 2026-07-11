@@ -6,22 +6,6 @@ A static, multi-page personal portfolio website built entirely with plain HTML. 
 
 This site showcases my background, skills, certifications, projects, and work experience. It is intentionally built without any styling to demonstrate strong command of core HTML tags and semantic structure, including tables, lists, forms, and metadata elements.
 
-## Folder Structure
-my-portfolio/
-├── CSS/
-├── images/
-│   ├── law.jpg
-│   └── profile.jpg
-├── js/
-├── pages/
-│   ├── about.html
-│   ├── contact.html
-│   ├── experience.html
-│   └── projects.html
-├── index.html
-└── README.md
-Note: the `CSS/` and `js/` folders exist in the project structure but are currently unused, since this build intentionally contains no external stylesheets or scripts.
-
 ## Pages
 
 | Page | File | Description |

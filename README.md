@@ -4,13 +4,14 @@ A static, multi-page personal portfolio website built entirely with plain HTML. 
 
 ## About This Project
 
-This site showcases my background, skills, certifications, projects, and work experience. It is intentionally built without any styling to demonstrate strong command of core HTML tags and semantic structure, including tables, lists, forms, and metadata elements.
+This site showcases my background, skills, certifications, projects, and work experience. It is intentionally built without any styling to demonstrate strong command of core HTML tags and semantic structure, including tables, lists, forms, definition lists, and metadata elements.
+
 
 ## Pages
 
 | Page | File | Description |
 |---|---|---|
-| Home | `index.html` | Landing page with a short introduction and site overview |
+| Home | `index.html` | Landing page with intro, highlights, and site navigation table |
 | About | `pages/about.html` | Background, skills, and certifications |
 | Projects | `pages/projects.html` | Selected projects with descriptions and links |
 | Experience | `pages/experience.html` | Work history, education, and leadership timeline |
@@ -21,14 +22,15 @@ This site showcases my background, skills, certifications, projects, and work ex
 - HTML5 only
 - No CSS (no external stylesheets, no `<style>` tags, no inline styles)
 - No JavaScript
-- Tables used for layout in place of CSS flexbox or grid, since no styling is available
+- Tables used for layout (header, nav bar, site map, certifications, timeline, RC car spec) in place of CSS flexbox or grid
+- Semantic tags throughout: `<header>`, `<nav>`, `<main>`, `<article>`, `<section>`, `<figure>`, `<figcaption>`, `<address>`, `<blockquote>`, `<dl>`, `<time>`, `<fieldset>`
 
 ## How to View
 
 Clone or download this repository, then open `index.html` directly in any web browser. No build step, server, or dependencies are required.
 
 ```bash
-git clone https://github.com/Prazol452412/my-portfolio.git
+git clone git@github.com:Prazol452412/my-portfolio.git
 cd my-portfolio
 ```
 
@@ -39,9 +41,9 @@ Then open `index.html` in a browser of your choice.
 Two images are used across the site, located in the `images/` directory:
 
 - `images/law.jpg` — displayed as the logo in the header on every page
-- `images/profile.jpg` — displayed on the About page
+- `images/profile.jpg` — displayed in the hero section of `index.html` and on `pages/about.html`
 
-Paths are relative, so `index.html` references `images/...` directly, while pages inside `pages/` reference `../images/...`.
+Paths are relative: `index.html` references `images/...` directly, while pages inside `pages/` reference `../images/...`.
 
 ## Contact
 

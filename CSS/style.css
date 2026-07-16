@@ -1,0 +1,346 @@
+body {
+    font-family: "Segoe UI", Roboto, sans-serif;
+    background: #f9f9f9;
+    line-height: 1.6;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #4FC3F7;
+    padding: 15px 30px;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+header img {
+    width: 60px;
+    height: 60px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+h1 {
+    font-size: 2rem;
+    color: white;
+    border-bottom: 2px solid #caf15d;
+    display: inline;
+    padding-bottom: 0.3rem;
+    margin: 0;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-top: 0;
+    color: #1565C0;
+}
+
+h3 {
+    font-size: 1.2rem;
+    color: #1565C0;
+    margin-bottom: 0.4rem;
+}
+
+/* Navigation */
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: yellow;
+}
+
+/* Header search form */
+header form {
+    display: flex;
+    gap: 10px;
+}
+
+header input {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+
+header button {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #1565C0;
+    color: white;
+    cursor: pointer;
+}
+
+header button:hover {
+    background-color: #0D47A1;
+}
+
+/* Main layout */
+main {
+    max-width: 1100px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+/* Sections */
+section {
+    padding: 25px;
+    margin: 20px 0;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* About section */
+.about-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.about-container img {
+    border-radius: 10px;
+    flex-shrink: 0;
+}
+
+/* Intro and highlights */
+.intro-container,
+.highlights-container {
+    padding: 0.5rem 0;
+}
+
+.highlights-container ul {
+    padding-left: 1.2rem;
+}
+
+/* Skills grid */
+.skill-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1rem;
+}
+
+.skill-card {
+    background-color: #f1f1f1;
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.skill-card dt {
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 0.3rem;
+    color: #1565C0;
+    margin-bottom: 0.5rem;
+    display: inline-block;
+}
+
+.skill-card dd {
+    margin: 0;
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Projects and Experience articles */
+#projects article,
+#experience article {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee;
+}
+
+#projects article:last-child,
+#experience article:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+#projects a {
+    color: #1565C0;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#projects a:hover {
+    text-decoration: underline;
+}
+
+/* Contact form */
+form {
+    margin-top: 20px;
+}
+
+form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: inherit;
+    box-sizing: border-box;
+}
+
+form button {
+    padding: 10px 20px;
+    margin-right: 10px;
+    background: #1565C0;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #0D47A1;
+}
+
+/* Social icons */
+#contact img {
+    width: 32px;
+    height: 32px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+/* Footer */
+footer {
+    background-color: #3c56c9;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.skill-card:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+.project-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1rem;
+    align-items: start;
+    margin-top: 1rem;
+}
+.project-container .project-card {
+    background: #fff;
+    padding: 16px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+    transition: transform 0.18s ease, box-shadow 0.18s ease;
+}
+.project-container .project-card h3 {
+    margin-top: 0;
+    color: #1565C0;
+}
+.project-container .project-card p {
+    color: #555;
+    margin: 0.5rem 0;
+}
+.project-container .project-card a {
+    color: #1565C0;
+    font-weight: bold;
+    text-decoration: none;
+}
+.project-container .project-card a:hover {
+    text-decoration: underline;
+}
+.project-container .project-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+
+.contact-container form{
+display: flex;
+flex-direction: column;
+}
+.contact-container label{
+font-weight: bold;
+color: #1e3a8a;
+margin-top: 1rem;
+}
+
+.contact-container input,
+.contact-container textarea{
+width: 100%;
+padding: 0.8rem;
+margin-top: 0.5rem;
+border: 1px solid #ccc;
+border-radius: 6px;
+}
+
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 1 rem;
+        width: 100%;
+        background-color: #4FC3F7;
+        padding: 1 rem;
+        border-radius: 8px;
+    }
+
+    nav a {
+        font-size: 1rem;
+        display: block;
+        padding: 0.5rem;
+        border-radius: 6px;
+    }
+    .about-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+    .header-container {
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+        }
+    nav ul {
+    gap: 1rem;
+    }
+
+    .about-container {
+    flex-direction: column;
+    align-items: center;
+
+    text-align: center;
+    }
+}

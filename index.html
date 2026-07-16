@@ -3,80 +3,184 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prazol Nepal | Home</title>
+    <title>Prazol Nepal | Portfolio</title>
     <meta name="description" content="Personal portfolio of Prazol Nepal, BIT student, cybersecurity enthusiast, and digital marketer.">
+    <link rel="stylesheet" href="CSS/style.css">
 </head>
 <body>
-<header>
-    <table>
-        <tr>
-            <td><img src="images/law.jpg" alt="Prazol Nepal Logo" width="50" height="50"></td>
-            <td><strong>&lt;Prazol/&gt;</strong></td>
-        </tr>
-    </table>
-    <nav>
-        <table>
-            <tr>
-                <td><a href="index.html">Home</a></td>
-                <td><a href="pages/about.html">About</a></td>
-                <td><a href="pages/projects.html">Projects</a></td>
-                <td><a href="pages/experience.html">Experience</a></td>
-                <td><a href="pages/contact.html">Contact</a></td>
-            </tr>
-        </table>
-    </nav>
-</header>
 
-    <hr>
+    <header>
+       <div class="header-container">
+            <img src="images/law.jpg" alt="Prazol Nepal Logo">
+             <h1>Prazol Nepal</h1>
+              <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
     <main>
-        <section id="hero">
-            <p><em>// hello world, I am</em></p>
-            <h1>Prazol Nepal</h1>
-            <img src="images/profile.jpg" alt="Prazol Nepal" width="200">
-            <p>Building red-team skills, breaking boxes for fun, and shipping ad campaigns.</p>
-            <p>
-                <a href="pages/projects.html">View Projects</a> |
-                <a href="pages/about.html">About Me</a> |
-                <a href="pages/contact.html">Get In Touch</a>
-            </p>
+        <section id="about">
+            <div class="about-container">
+                <div>
+                    <h2>About me</h2>
+                    <p>
+                        I am a Bachelor of Information Technology student at
+                        Model Institute of Technology (MIT), Kathmandu,
+                        affiliated with International American University.
+                        I split my time between cybersecurity, cloud
+                        computing, and digital marketing. On the security
+                        side, I play CTFs on HackTheBox and study both
+                        offensive and defensive techniques. By day, I run
+                        Meta advertising campaigns at Vidhya Bodhi Education
+                        Pvt. Ltd., an education consultancy in Kathmandu.
+                    </p>
+                </div>
+                <img src="images/profile.jpg" alt="Portrait of Prazol Nepal" width="200">
+            </div>
         </section>
-
-        <hr>
 
         <section id="intro">
-            <h2>Quick Introduction</h2>
-            <p>
-                I am a Bachelor of Information Technology student at
-                <strong>Model Institute of Technology (MIT), Kathmandu</strong>,
-                affiliated with International American University. I split my
-                time between cybersecurity, cloud computing, and digital marketing.
-            </p>
-            <p>
-                By day, I run Meta advertising campaigns for an education
-                consultancy. By night, I play CTFs, harden Linux boxes, and
-                explore offensive security.
-            </p>
+            <div class="intro-container">
+                <h2>Quick introduction</h2>
+                <p>
+                    Building red-team skills, breaking boxes for fun, and
+                    shipping ad campaigns. I enjoy the contrast between
+                    packets and pixels, exploits and engagement metrics.
+                </p>
+            </div>
         </section>
-
-        <hr>
 
         <section id="highlights">
-            <h2>Quick Highlights</h2>
-            <ul>
-                <li>BIT student at IAU / MIT Nepal</li>
-                <li>AWS Cloud Security certified</li>
-                <li>Active HackTheBox player</li>
-                <li>Meta Ads campaign manager at Vidhya Bodhi Education</li>
-            </ul>
+            <div class="highlights-container">
+                <h2>Quick highlights</h2>
+                <ul>
+                    <li>BIT student at IAU / MIT Nepal</li>
+                    <li>AWS Cloud Security Foundation certified</li>
+                    <li>Active HackTheBox player</li>
+                    <li>Meta Ads campaign manager at Vidhya Bodhi Education</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="skills">
+            <h2>Skills</h2>
+            <div class="skill-grid">
+                <div class="skill-card">
+                    <dl>
+                        <dt>Cybersecurity</dt>
+                        <dd>Penetration testing fundamentals, CTF problem solving, network security, Linux hardening</dd>
+                    </dl>
+                </div>
+                <div class="skill-card">
+                    <dl>
+                        <dt>Cloud</dt>
+                        <dd>AWS core services, S3 static hosting, IAM and least privilege, cloud security posture</dd>
+                    </dl>
+                </div>
+                <div class="skill-card">
+                    <dl>
+                        <dt>Languages</dt>
+                        <dd>C, Python, Bash scripting, front-end markup</dd>
+                    </dl>
+                </div>
+                <div class="skill-card">
+                    <dl>
+                        <dt>Digital marketing</dt>
+                        <dd>Meta Ads Manager, campaign management, lead generation, analytics and reporting</dd>
+                    </dl>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+
+            <div class="project-container">
+                <article class="project-card">
+                    <h3>RC car with accident detection</h3>
+                    <p>
+                        A microcontroller-driven RC car prototype fitted with
+                        impact sensors that trigger a response on collision.
+                    </p>
+                    <p><a href="https://github.com/Prazol452412" target="_blank" rel="noopener">View on GitHub</a></p>
+                </article>
+
+                <article class="project-card">
+                    <h3>Python port scanner</h3>
+                    <p>
+                        A lightweight TCP port scanner with DNS resolution,
+                        connection timeouts, and clean, readable output.
+                    </p>
+                    <p><a href="https://github.com/Prazol452412" target="_blank" rel="noopener">View on GitHub</a></p>
+                </article>
+            </div>
+        </section>
+
+        <section id="experience">
+            <h2>Experience</h2>
+
+            <article>
+                <h3>Digital marketing and Meta advertising</h3>
+                <p><strong>Vidhya Bodhi Education Pvt. Ltd.</strong>, New Baneshwor, Kathmandu</p>
+                <p><time datetime="2025">2025 to Present</time></p>
+                <p>
+                    Running Meta ad campaigns for an education consultancy,
+                    focusing on lead generation, creative testing, and
+                    conversion tracking.
+                </p>
+            </article>
+
+            <article>
+                <h3>Bachelor of Information Technology</h3>
+                <p>IAU / Model Institute of Technology (MIT), Bagbazar, Kathmandu</p>
+                <p><time datetime="2024">2024 to Present</time></p>
+                <p>
+                    Coursework across programming, networking, databases,
+                    and security, with self-study in cybersecurity and
+                    cloud alongside the curriculum.
+                </p>
+            </article>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <form action="mailto:projwol.114381@mitnepal.edu.np" method="post" enctype="text/plain">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="6" required></textarea>
+
+                <button type="submit">Send</button>
+            </form>
+
+            <p>
+                <a href="mailto:projwol.114381@mitnepal.edu.np">
+                    <img src="images/mail-icon.png" alt="Email">
+                </a>
+                <a href="https://www.linkedin.com/in/prazol-nepal-8a5187349">
+                    <img src="images/linkedin-icon.png" alt="LinkedIn">
+                </a>
+                <a href="https://github.com/Prazol452412">
+                    <img src="images/github-icon.png" alt="GitHub">
+                </a>
+            </p>
         </section>
     </main>
-    <hr>
+
     <footer>
-        <address>
-            Contact: <a href="mailto:projwol.114381@mitnepal.edu.np">projwol.114381@mitnepal.edu.np</a>
-        </address>
         <p>&copy; 2026 Prazol Nepal. All rights reserved.</p>
     </footer>
+
 </body>
 </html>
